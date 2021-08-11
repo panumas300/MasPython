@@ -16,10 +16,10 @@ class Comments(db.Model):
     comment = Column(String)
 
 
-#@app.route('/')
-#def index():
-#    result = Comments.query.all()
-#    return render_template('index7.html', result=result)
+@app.route('/')
+def index():
+    result = Comments.query.all()
+    return render_template('index7.html', result=result)
 
 
 @app.route('/sign')
