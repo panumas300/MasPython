@@ -19,8 +19,8 @@ class Comments(db.Model):
 @app.route('/')
 def index():
 #    result = Comments.query.all()
-#    return render_template('index7.html', result=result)
-    return 'Hello World'
+    return render_template('index7.html', result=result)
+
 
 @app.route('/sign')
 def sign():
